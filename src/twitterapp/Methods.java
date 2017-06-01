@@ -31,11 +31,11 @@ public class Methods {
      */
     public void keys(){
             cb = new ConfigurationBuilder();
-            cb.setDebugEnabled(true)
-                    .setOAuthConsumerKey("***")
-                    .setOAuthConsumerSecret("***")
-                    .setOAuthAccessToken("***")
-                    .setOAuthAccessTokenSecret("***");
+            cb.setDebugEnabled(true);
+//                    .setOAuthConsumerKey("***")
+//                    .setOAuthConsumerSecret("***")
+//                    .setOAuthAccessToken("***")
+//                    .setOAuthAccessTokenSecret("***");
             TwitterFactory tf = new TwitterFactory(cb.build());
             twitter = tf.getInstance();
     }
